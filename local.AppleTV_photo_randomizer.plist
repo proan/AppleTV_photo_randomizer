@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.AppleTV_photo_randomizer</string>
+	<key>Program</key>
+	<string>INSTALL_DIR/AppleTV_photo_randomizer.py</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>1</integer>
+		<key>Minute</key>
+		<integer>41</integer>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>CURRENT_USER/Library/Logs/AppleTV_photo_randomizer/log.log</string>
+	<key>StandardErrorPath</key>
+	<string>CURRENT_USER/Library/Logs/AppleTV_photo_randomizer/log.log</string>
+	<key>Debug</key>
+	<true/>
+</dict>
+</plist>
