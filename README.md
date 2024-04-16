@@ -1,6 +1,7 @@
 # AppleTV_photo_randomizer
 
-Maintained by [proan]{https://github.com/proan}
+Maintained by [proan](https://github.com/proan)  
+Version: 0.1.0  
 License: GPL-3.0-or-later
 
 The AppleTV3 can display photos on the screen saver if those photos are shared
@@ -23,12 +24,12 @@ These scripts have been tested on macOS Monterey (12.7.4).
 1. Clone this repo.
 2. Locate the folder that contains all of your photos. These photos can all be
    in one folder or contained in folders or a combination.
-3. From this repo, run `./install.sh /path/to/photos` to install. This will copy
-   the scripts to the current user's Library and update them to point at the
-   provided folder full of photos.
-4. You will be prompted to allow Terminal.app, Script Editor.app, and/or python3
+3. From this repo, run `$ ./install.sh /path/to/photos` to install. This will
+   copy the scripts to the current user's Library and update them to point at
+   the provided folder full of photos.
+5. You will be prompted to allow Terminal.app, Script Editor.app, and/or python3
    to control your computer. Please agree, otherwise the scripts will fail.
-5. Open _System Preferences_ -> _Sharing_ -> _Media Sharing_ and enable
+6. Open _System Preferences_ -> _Sharing_ -> _Media Sharing_ and enable
    _Home Sharing_ and _Share photos with Apple TV_. Use the "Choose..." button
    to select the "Apple TV Photos" folder located in "/path/to/photos" folder
    provided to the install script.
@@ -93,7 +94,7 @@ service in Console is "gui/$UID/com.apple.AMPLibraryAgent".
 There might be away to edit the sharing preferences plist and having that
 trigger a rebuild, but I haven't been able to make that work.
 ```    
-$> defaults read com.apple.preferences.sharing.SharingPrefsExtension
+$ defaults read com.apple.preferences.sharing.SharingPrefsExtension
 
 {
     homeSharingUIStatus = 1;
@@ -103,5 +104,5 @@ $> defaults read com.apple.preferences.sharing.SharingPrefsExtension
 ```
 Found 1 keys in domain `com.apple.amp.mediasharingd`
 ```
-$> defaults write com.apple.amp.mediasharingd "photo-sharing-enabled" -bool true
+$ defaults write com.apple.amp.mediasharingd "photo-sharing-enabled" -bool true
 ```
